@@ -17,6 +17,7 @@ header {
     font-weight: 700;
     font-size: 32px;
     letter-spacing: -1px;
+    text-decoration: none;
     color: #FFD700;
 }
 .header-wrapper {
@@ -40,17 +41,32 @@ header {
     font-size: 20px;
     text-decoration: none;
     color: #29D8DB;
+    transition: color 0.3s ease-in-out; /* Плавный переход */
 }
-.code-intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 300px;
-}
-.code-intro p {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
+.header-menu_item a:hover {
     color: #E0E0E0;
+}
+.typing-container {
+    padding-top: 300px;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #E0E0E0;
+    text-align: center;
+}
+/* Курсор (моргает) */
+.typing-text::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.8s infinite;
+}
+/* Анимация моргания */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+/* Когда текст полностью напечатан, курсор исчезает */
+.typing-text.finished::after {
+    content: "";
+    animation: none;
 }

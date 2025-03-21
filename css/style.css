@@ -24,6 +24,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    z-index: 1000;
 }
 .header-navbar_menu {
     display: flex;
@@ -46,8 +50,12 @@ header {
 .header-menu_item a:hover {
     color: #E0E0E0;
 }
-.typing-container {
+.header-typing-container {
+    width: 1150px;
+    margin: auto;
     padding-top: 300px;
+}
+.typing-container {
     font-family: "Inter", sans-serif;
     font-size: 35px;
     line-height: 46px;
@@ -76,6 +84,11 @@ header {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .header-typing-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 @media (max-width: 767px) {
     .logo {
@@ -84,7 +97,7 @@ header {
     .typing-container {
         font-size: 30px;
     }
-    .header-navbar {
-        display: none;
-    }
+}
+p {
+    font-size: 34px;
 }

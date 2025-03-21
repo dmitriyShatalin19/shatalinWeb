@@ -70,3 +70,21 @@ header {
     content: "";
     animation: none;
 }
+@media (max-width: 1199px) {
+    .header-content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .logo {
+        font-size: 28px;
+    }
+    .typing-container {
+        font-size: 30px;
+    }
+    .header-navbar {
+        display: none;
+    }
+}

@@ -74,20 +74,10 @@ header {
 }
 .burger-icon {
     display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-    z-index: 1001;
-    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #E0E0E0;
   }
-  
-  .burger-icon span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-  }
-  
   .burger-menu {
     position: fixed;
     top: 0;

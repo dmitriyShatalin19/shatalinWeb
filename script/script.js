@@ -23,41 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger-icon");
   const mobileMenu = document.getElementById("burger-menu");
   const closeBtn = document.getElementById("close-menu");
+  const body = document.body;
 
   burger.addEventListener("click", () => {
     mobileMenu.classList.add("active");
+    body.classList.add("menu-open"); // Блокируем скролл
   });
 
   closeBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
+    body.classList.remove("menu-open"); // Разблокируем скролл
   });
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Аккордеон
-  const accordionItems = document.querySelectorAll('.accordion-item');
-  
-  accordionItems.forEach(item => {
-      const toggle = item.querySelector('.accordion-toggle');
-      
-      toggle.addEventListener('click', () => {
-          // Закрываем все другие открытые элементы
-          accordionItems.forEach(otherItem => {
-              if (otherItem !== item && otherItem.classList.contains('active')) {
-                  otherItem.classList.remove('active');
-                  otherItem.querySelector('.accordion-content').style.maxHeight = '0';
-              }
-          });
-          
-          // Переключаем текущий элемент
-          const isActive = item.classList.toggle('active');
-          const content = item.querySelector('.accordion-content');
-          content.style.maxHeight = isActive ? content.scrollHeight + 'px' : '0';
-      });
-  });
-});
 
 
 

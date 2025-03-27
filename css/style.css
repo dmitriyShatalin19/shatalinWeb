@@ -122,6 +122,12 @@ header {
     color: white;
     cursor: pointer;
 }
+body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
 main {
     width: 100%;
     height: 100vh;
@@ -131,86 +137,16 @@ main {
 .main-container {
     width: 1150px;
     margin: auto;
-    padding-top: 50px;
 }
-.main-container_title {
-    padding-bottom: 30px;
+.main-about_title {
     font-family: "Inter", sans-serif;
-    font-size: 35px;
     font-weight: 700;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 55px;
+    color: #29D8DB;
 }
-.main-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-}
-.accordion {
-    width: 100%;
-}
-.accordion-item {
-    margin-bottom: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #1F1F1F;
-}
-.accordion-toggle {
-    width: 100%;
-    padding: 20px;
-    text-align: left;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #E0E0E0;
-    background-color: #2A2A2A;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s ease;
-}
-.accordion-toggle:hover {
-    background-color: #333333;
-}
-.arrow {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-right: 2px solid #FFD700;
-    border-bottom: 2px solid #FFD700;
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
-    margin-left: 10px;
-}
-.accordion-item.active .arrow {
-    transform: rotate(45deg);
-}
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    padding: 0 20px;
-    background-color: #1F1F1F;
-}
-.accordion-content p {
-    padding: 20px 0;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #E0E0E0;
-}
-.accordion-item.active .accordion-content {
-    max-height: 500px;
-} 
 @media (max-width: 1199px) {
     .header-content {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .main-container {
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
@@ -229,7 +165,6 @@ main {
     .burger-icon {
         display: flex;
     }
-    
     .header-navbar {
         display: none;
     }

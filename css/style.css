@@ -292,8 +292,21 @@ main {
         font-size: 28px;
         line-height: 38px;
     }
+    .main-about_title {
+        font-size: 26px;
+        line-height: 40px;
+    }
     .info-title {
         font-size: 20px;
+        line-height: 30px;
+    }
+    .info-item {
+        font-size: 16px;
+    }
+    .main-portfolio_title {
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 20px;
     }
     .portfolio-wrapper {
         flex-direction: column;
@@ -301,6 +314,12 @@ main {
         margin-top: 10px;
     }
     .portfolio-block {
+        width: 100%;
+    }
+    .portfolio-title {
+        line-height: 30px;
+    }
+    .portfolio-btn {
         width: 100%;
     }
 }

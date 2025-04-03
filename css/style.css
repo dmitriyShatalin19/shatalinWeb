@@ -267,6 +267,9 @@ main {
     }
 }
 @media (max-width: 767px) {
+    header {
+        height: 600px;
+    }
     .logo {
         font-size: 28px;
     }
@@ -274,14 +277,18 @@ main {
         display: none;
     }
     .typing-container {
-        font-size: 30px;
+        padding-top: 200px;
     }
     .burger-icon {
         display: flex;
     }
-
     .main-about_title {
         font-size: 28px;
+        line-height: 40px;
+    }
+    .main-portfolio_title {
+        font-size: 28px;
+        line-height: 40px;
     }
     .info-columns {
         margin-top: 20px;
@@ -297,8 +304,8 @@ main {
         line-height: 38px;
     }
     .main-about_title {
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 35px;
     }
     .info-title {
         font-size: 20px;
@@ -308,8 +315,8 @@ main {
         font-size: 16px;
     }
     .main-portfolio_title {
-        font-size: 26px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 35px;
         margin-bottom: 20px;
     }
     .portfolio-wrapper {

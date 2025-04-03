@@ -1,0 +1,94 @@
+:root {
+    --bg-color: #121212;
+    --secondary-bg: #1F1F1F;
+    --accent-color: #29D8DB;
+    --gold-color: #FFD700;
+    --text-color: #E0E0E0;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: var(--bg-color);
+    padding: 20px 0;
+}
+.header-content {
+    width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #FFD700;
+}
+.project-container {
+    width: 1150px;
+    margin: 50px auto;
+}
+.project-container_title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2A2A2A;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.project-card:hover {
+    box-shadow: 0 12px 25px rgba(41, 216, 219, 0.5);
+}
+.project-title {
+    color: var(--gold-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.project-languages {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+.project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--gold-color);
+    color: var(--bg-color);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.project-btn:hover {
+    background-color: var(--accent-color);
+    box-shadow: 0 8px 16px rgba(41, 216, 219, 0.5);
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

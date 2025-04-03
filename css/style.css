@@ -205,7 +205,7 @@ main {
     flex-wrap: wrap;
     gap: 4%;
     margin-top: 30px;
-  }
+}
 .portfolio-block {
     width: 48%;
     background-color: #1F1F1F;
@@ -313,6 +313,7 @@ main {
     }
     .info-item {
         font-size: 16px;
+        line-height: 24px;
     }
     .main-portfolio_title {
         font-size: 24px;

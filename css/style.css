@@ -188,10 +188,6 @@ main {
     line-height: 30px;
     color: #E0E0E0;;
 }
-.main-portfolio {
-    width: 1150px;
-    margin: auto;
-}
 .main-portfolio_title {
     margin-top: 50px;
     font-family: "Inter", sans-serif;
@@ -246,6 +242,13 @@ main {
     text-decoration: none;
     color: #121212;
 }
+.main-services_title {
+    font-weight: 700;
+    font-size: 30px; 
+    line-height: 55px; 
+    margin-top: 50px;
+    color: #29D8DB;
+}
 @media (max-width: 1199px) {
     .header-content {
         width: 100%;
@@ -259,11 +262,6 @@ main {
     }
     .info-columns {
         width: 100%;
-    }
-    .main-portfolio {
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
 @media (max-width: 767px) {

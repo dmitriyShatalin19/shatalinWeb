@@ -63,3 +63,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      const item = this.parentElement;
+      const content = item.querySelector('.accordion-content');
+
+      // Если элемент уже раскрыт, сворачиваем его
+      if(item.classList.contains('active')) {
+        content.style.maxHeight = null;
+        item.classList.remove('active');
+      } else {
+        // Раскрываем элемент: устанавливаем max-height равным scrollHeight
+        content.style.maxHeight = content.scrollHeight + "px";
+        item.classList.add('active');
+      }
+    });
+  });
+});

@@ -252,7 +252,7 @@ main {
 .accordion {
     margin-top: 20px;
     border-top: 1px solid #2A2A2A;
-  }
+}
 .accordion-item {
     border-bottom: 1px solid #2A2A2A;
     padding: 10px 0;
@@ -284,6 +284,54 @@ main {
 }
 .accordion-item_list {
     line-height: 28px;
+}
+.main-contacts_title {
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    color: #29D8DB;
+}
+.main-wrapper_block {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-wrapper-block_subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+}
+.main-wrapper_block-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-wrapper_block-input input {
+    padding: 5px;
+    width: 350px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #121212;
+}
+.main-wrapper-block_button {
+    width: 200px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #FFD700;
+}
+.main-wrapper-block_button:hover {
+    background-color: #E0E0E0;
+    color: #121212;
 }
 @media (max-width: 1199px) {
     .header-content {
@@ -328,6 +376,14 @@ main {
         margin-top: 20px;
         padding: 15px 15px;
     }
+    .main-services_title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .main-contacts_title {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 @media (max-width: 475px) {
     .logo {
@@ -367,5 +423,24 @@ main {
     }
     .portfolio-btn {
         width: 100%;
+    }
+    .main-services_title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .main-contacts_title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .main-wrapper-block_subtitle {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .main-wrapper_block-input input {
+        width: 100%;
+        font-size: 16px;
+    }
+    .main-wrapper-block_button {
+        font-size: 16px;
     }
 }

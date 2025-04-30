@@ -285,6 +285,9 @@ main {
 .accordion-item_list {
     line-height: 28px;
 }
+.main-contacts {
+    padding-bottom: 50px;
+}
 .main-contacts_title {
     margin-top: 50px;
     font-family: "Inter", sans-serif;
@@ -333,6 +336,51 @@ main {
     background-color: #E0E0E0;
     color: #121212;
 }
+                                         /* footer */
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #1F1F1F;
+}
+.footer-fon {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #FFD700;
+}
+.footer-content {
+    padding-top: 50px;
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer-navbar_menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+.footer-menu_item {
+    display: inline;
+}
+.footer-menu_item a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    color: #121212;
+    transition: color 0.3s ease-in-out; /* Плавный переход */
+}
+.footer-menu_item a:hover {
+    color: #E0E0E0;
+}
+.footer-content_politics {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
 @media (max-width: 1199px) {
     .header-content {
         width: 100%;
@@ -346,6 +394,11 @@ main {
     }
     .info-columns {
         width: 100%;
+    }
+    .footer-content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media (max-width: 767px) {
@@ -383,6 +436,12 @@ main {
     .main-contacts_title {
         font-size: 28px;
         line-height: 40px;
+    }
+    .footer-content {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 @media (max-width: 475px) {
@@ -441,6 +500,12 @@ main {
         font-size: 16px;
     }
     .main-wrapper-block_button {
+        font-size: 16px;
+    }
+    .footer-menu_item a {
+        font-size: 16px;
+    }
+    .footer-content_politics {
         font-size: 16px;
     }
 }

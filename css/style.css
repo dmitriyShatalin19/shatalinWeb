@@ -229,16 +229,16 @@ main {
     font-size: 14px;
     color: #29D8DB;
 }
-.portfolio-btn {
+.protfolio-btn_link {
+    display: block;
+    text-align: center;
     width: 200px;
     height: 70px;
     margin-top: 20px;
     border-radius: 5px;
     background-color: #FFD700;
-    border: none;
-}
-.protfolio-btn_link {
     font-size: 20px;
+    line-height: 70px;
     text-decoration: none;
     color: #121212;
 }
@@ -348,7 +348,7 @@ footer {
     z-index: 100;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: #FFD700;
+    background-color: #2A2A2A;
 }
 .footer-content {
     padding-top: 50px;
@@ -371,11 +371,11 @@ footer {
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
-    color: #121212;
+    color: #29D8DB;
     transition: color 0.3s ease-in-out; /* Плавный переход */
 }
 .footer-menu_item a:hover {
-    color: #E0E0E0;
+    color: #ffffff;
 }
 .footer-content_politics {
     font-family: "Inter", sans-serif;
@@ -480,7 +480,7 @@ footer {
     .portfolio-title {
         line-height: 30px;
     }
-    .portfolio-btn {
+    .protfolio-btn_link {
         width: 100%;
     }
     .main-services_title {

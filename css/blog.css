@@ -1,0 +1,119 @@
+body {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+.header-content {
+    width: 1150px;
+    margin: auto;
+    padding-top: 27px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #FFD700;
+}
+.header-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header-navbar_link a {
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+    color: #29D8DB;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.header-navbar_link a:hover,
+.header-navbar_link a.active {
+    color: aliceblue;
+    background-color: #2A2A2A;
+}
+.main-container {
+    width: 1150px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.blog-post {
+    background-color: #1F1F1F;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #2A2A2A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(41, 216, 219, 0.3);
+}
+.post-title {
+    color: #FFD700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.post-excerpt {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #29D8DB;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.post-category {
+    background-color: #2A2A2A;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+.no-posts {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #E0E0E0;
+    font-size: 18px;
+}
+@media (max-width: 1199px) {
+    .header-content,
+    .main-container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .header-navbar {
+        gap: 15px;
+    }
+    
+    .header-navbar_link a {
+        font-size: 18px;
+    }
+    
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}

@@ -64,6 +64,18 @@ body {
     padding: 25px;
     border: 1px solid #2A2A2A;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Для правильного позиционирования ссылки */
+}
+
+.post-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(41, 216, 219, 0.3);
 }
 .blog-post:hover {
     transform: translateY(-5px);
@@ -110,17 +122,18 @@ body {
     }
     .header-navbar {
         gap: 15px;
-    }
-    
+    }  
     .header-navbar_link a {
         font-size: 18px;
-    }
-    
+    } 
     .blog-posts {
         grid-template-columns: 1fr;
     }
 }
 @media (max-width: 467px) {
+    .header-navbar {
+        gap: 10px;
+    }
     .post-title {
         font-size: 20px;
         line-height: 30px;

@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const blogPosts = [
         {
             id: 1,
-            title: "Основы HTML5",
-            excerpt: "В этой статье мы рассмотрим основные теги HTML5 и их применение.",
-            category: "html",
-            date: "2025-05-15"
+            title: "GIT",
+            excerpt: "Git - это систеам контроля версий...",
+            category: "git",
+            date: "2025-05-03"
         }
     ];
     // Функция для отображения статей

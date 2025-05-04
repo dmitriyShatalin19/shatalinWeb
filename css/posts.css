@@ -42,6 +42,16 @@ body {
 .full-post-content {
     line-height: 1.6;
     margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.full-post-text {
+    font-size: 18px;
+    line-height: 28px;
+}
+.full-post-subtitle {
+    margin-top: 15px;
+    font-size: 20px;
 }
 .full-post-meta {
     display: flex;

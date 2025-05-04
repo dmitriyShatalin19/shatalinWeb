@@ -42,7 +42,7 @@ body {
 .full-post-content {
     line-height: 1.6;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
 }
 .full-post-text {
@@ -51,7 +51,20 @@ body {
 }
 .full-post-subtitle {
     margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.full-post-code_title {
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.full-post-code_block {
+    background-color: #121212;
+    padding: 10px 15px 10px 20px;
+}
+.full-post-code_block li {
+    line-height: 26px;
 }
 .full-post-meta {
     display: flex;

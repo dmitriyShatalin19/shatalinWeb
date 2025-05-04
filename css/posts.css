@@ -36,7 +36,7 @@ body {
 }
 .full-post-title {
     color: #FFD700;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 .full-post-content {
@@ -47,12 +47,12 @@ body {
 }
 .full-post-text {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 22px;
 }
 .full-post-subtitle {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 26px;
 }
 .full-post-code_title {
     font-size: 20px;
@@ -109,7 +109,29 @@ body {
         font-size: 28px;
     }
     .full-post-title {
-        font-size: 24px;
+        font-size: 26px;
         line-height: 28px;
+    }
+    .full-post-subtitle {
+        font-size: 24px;
+    }
+}
+@media (max-width: 475px) {
+    .full-post-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .full-post-content {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .full-post-text {
+        font-size: 16px;
+    }
+    .full-post-subtitle {
+        font-size: 20px;
+    }
+    .full-post-code_title {
+        font-size: 18px;
     }
 }

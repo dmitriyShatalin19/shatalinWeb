@@ -60,6 +60,7 @@ body {
     margin-bottom: 10px;
 }
 .full-post-code_block {
+    border-radius: 10px;
     background-color: #121212;
     padding: 10px 15px 10px 20px;
 }
@@ -133,5 +134,8 @@ body {
     }
     .full-post-code_title {
         font-size: 18px;
+    }
+    .full-post-code_block {
+        font-size: 14px;
     }
 }

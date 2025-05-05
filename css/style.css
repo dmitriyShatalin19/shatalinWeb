@@ -238,13 +238,20 @@ main {
     line-height: 55px;
     color: #29D8DB;
 }
+.main-contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main-wrapper_block {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
+}
+.main-contacts_container_img img{
+    display: block;
+    overflow: visible;
 }
 .main-wrapper-block_subtitle {
     font-family: "Inter", sans-serif;
@@ -442,6 +449,10 @@ body.menu-open {
     .main-contacts_title {
         font-size: 28px;
         line-height: 40px;
+    }
+    .main-contacts_container_img img{
+        display: none;
+        overflow: hidden;
     }
     .footer-content {
         justify-content: center;

@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
             excerpt: "Git - это систеам контроля версий...",
             category: "git",
             date: "2025-05-03"
+        },
+        {
+            id: 2,
+            title: "JS",
+            excerpt: "...",
+            category: "js",
+            date: "2025-05-06"
         }
     ];
     // Функция для отображения статей

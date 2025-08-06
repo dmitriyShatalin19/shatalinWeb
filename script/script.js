@@ -1,3 +1,17 @@
+// смена тема для сайта
+const ThemeLight = document.querySelector('.js-theme-light');
+const ThemeDark = document.querySelector('.js-theme-dark');
+const header = document.querySelector('header');
+
+ThemeLight.addEventListener('click', function() {
+  header.classList.remove('theme-dark');
+  header.classList.add('theme-light');
+});
+ThemeDark.addEventListener('click', function() {
+    header.classList.remove('theme-light');
+  header.classList.add('theme-dark')
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const text = "Вход в систему... Добро пожаловать в мою цифровую лабораторию 🟢";
     const speed = 100; // Скорость печати (мс)
@@ -17,8 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter();
 });
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger-icon");
   const mobileMenu = document.getElementById("burger-menu");
@@ -35,10 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.remove("menu-open"); // Разблокируем скролл
   });
 });
-
-
-
-
 // Плавная прокрутка для всех якорных ссылок
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -63,9 +71,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
   });
 });
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const accordionHeaders = document.querySelectorAll('.accordion-header');
 

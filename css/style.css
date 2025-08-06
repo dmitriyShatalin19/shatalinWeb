@@ -1,6 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
-}                                        /* header */
+}
+                                  /* header */
 header {
     width: 100%;
     height: 100vh;
@@ -23,6 +24,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #121212;
+}
+/* тема для сайта */
+.theme-light {
+    background-color: #ffffff;
+}
+.theme-dark {
     background-color: #121212;
 }
 .header-navbar_menu {

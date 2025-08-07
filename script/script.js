@@ -1,15 +1,14 @@
 // смена тема для сайта
 const ThemeLight = document.querySelector('.js-theme-light');
 const ThemeDark = document.querySelector('.js-theme-dark');
-const header = document.querySelector('header');
+const body = document.body;
 
 ThemeLight.addEventListener('click', function() {
-  header.classList.remove('theme-dark');
-  header.classList.add('theme-light');
+  body.classList.remove('theme-dark');
+  body.classList.add('theme-light');
 });
 ThemeDark.addEventListener('click', function() {
-    header.classList.remove('theme-light');
-  header.classList.add('theme-dark')
+  body.classList.remove('theme-light');
 });
 
 document.addEventListener("DOMContentLoaded", function() {

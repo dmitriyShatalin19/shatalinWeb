@@ -1,7 +1,7 @@
 body {
     font-family: "Inter", sans-serif;
 }
-                                  /* header */
+/* header */
 header {
     width: 100%;
     height: 100vh;
@@ -27,11 +27,46 @@ header {
     background-color: #121212;
 }
 /* тема для сайта */
-.theme-light {
-    background-color: #ffffff;
+body.theme-light {
+    background-color: #F9FAFB;
 }
-.theme-dark {
-    background-color: #121212;
+body.theme-light header,
+body.theme-light .header-wrapper,
+body.theme-light main,
+body.theme-light footer,
+body.theme-light .footer-fon {
+    background-color: #FFFFFF;
+}
+body.theme-light .info-columns,
+body.theme-light .portfolio-block,
+body.theme-light .footer-fon {
+    background-color: #E0E0E0;
+}
+body.theme-light .main-about_title,
+body.theme-light .main-portfolio_title,
+body.theme-light .main-services_title,
+body.theme-light .contacts__title {
+    color: #D4A200;
+}
+body.theme-light .info-title,
+body.theme-light .portfolio-title,
+body.theme-light .portfolio-tags,
+body.theme-light .accordion-header {
+    color: #0FA3B1;
+}
+body.theme-light .typing-container,
+body.theme-light .info-item, 
+body.theme-light .portfolio-description,
+body.theme-light .accordion-item {
+    color: #111827;
+}
+body.theme-light .portfolio-block {
+    border: 1px solid #E0E0E0;
+}
+body.theme-light .contact_mail:hover,
+body.theme-light .contact_phone:hover,
+body.theme-light .footer-menu_item a:hover {
+    color: #007B8A
 }
 .header-navbar_menu {
     display: flex;
@@ -79,10 +114,10 @@ header {
     content: "";
     animation: none;
 }
-                                            /* main */
+/* main */
 main {
     width: 100%;
-    background: linear-gradient(to bottom, #121212, #1F1F1F);
+    background-color: #121212;
     color: #E0E0E0;
 }
 .main-container {
@@ -272,7 +307,7 @@ main {
 .contact_phone:hover {
     color: #E0E0E0;
 }
-                                         /* footer */
+/* footer */
 footer {
     width: 100%;
     height: 150px;
@@ -318,7 +353,7 @@ footer {
     font-size: 18px;
     color:#29D8DB;
 }
-                                        /* burger-menu */
+/* burger-menu */
 .burger-icon {
     display: none;
     width: 40px;

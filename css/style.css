@@ -26,6 +26,10 @@ header {
     align-items: center;
     background-color: #121212;
 }
+.theme {
+    display: block;
+    visibility: visible;
+}
 /* тема для сайта */
 body.theme-light {
     background-color: #F9FAFB;
@@ -67,6 +71,10 @@ body.theme-light .contact_mail:hover,
 body.theme-light .contact_phone:hover,
 body.theme-light .footer-menu_item a:hover {
     color: #007B8A
+}
+body.theme-light .contact_icon {
+    background-color: #E0E0E0;
+    border-radius: 5px;
 }
 .header-navbar_menu {
     display: flex;
@@ -445,6 +453,9 @@ body.menu-open {
         font-size: 28px;
     }
     .header-navbar {
+        display: none;
+    }
+    .theme {
         display: none;
     }
     .typing-container {

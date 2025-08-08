@@ -1,16 +1,22 @@
 // смена тема для сайта
-const ThemeLight = document.querySelector('.js-theme-light');
-const ThemeDark = document.querySelector('.js-theme-dark');
-const body = document.body;
+const ThemeLight = document.querySelectorAll('.js-theme-light');
+const ThemeDark = document.querySelectorAll('.js-theme-dark');
 
-ThemeLight.addEventListener('click', function() {
-  body.classList.remove('theme-dark');
-  body.classList.add('theme-light');
-});
-ThemeDark.addEventListener('click', function() {
-  body.classList.remove('theme-light');
+ThemeLight.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.body.classList.add('theme-light');
+    document.body.classList.remove('theme-dark');
+  });
 });
 
+ThemeDark.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.body.classList.add('theme-dark');
+    document.body.classList.remove('theme-light');
+  });
+});
+
+// текст
 document.addEventListener("DOMContentLoaded", function() {
     const text = "Вход в систему... Добро пожаловать в мою цифровую лабораторию 🟢";
     const speed = 100; // Скорость печати (мс)
@@ -30,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter();
 });
+// burger-menu
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger-icon");
   const mobileMenu = document.getElementById("burger-menu");

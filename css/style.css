@@ -333,11 +333,14 @@ footer {
     padding-top: 50px;
     width: 1150px;
     margin: auto;
+}
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 .footer-navbar_menu {
+    margin-bottom: 20px;
     display: flex;
     gap: 15px;
     list-style: none;
@@ -354,9 +357,24 @@ footer {
     transition: color 0.3s ease-in-out; /* Плавный переход */
 }
 .footer-menu_item a:hover {
-    color: #ffffff;
+    color: #0FA3B1;
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+.footer-social_link {
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #29D8DB;
+}
+.footer-social_link:hover {
+    color: #0FA3B1;
 }
 .footer-content_politics {
+    display: flex;
+    justify-content: flex-end;
     font-family: "Inter", sans-serif;
     font-size: 18px;
     color:#29D8DB;
@@ -494,6 +512,20 @@ body.menu-open {
         flex-direction: column;
         gap: 20px;
     }
+    .footer-wrapper {
+        margin-bottom: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-navbar_menu {
+        margin: 0;
+    }
+    .footer-content_politics {
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (max-width: 475px) {
     .logo {
@@ -567,6 +599,9 @@ body.menu-open {
     }
     .footer-menu_item a {
         font-size: 16px;
+    }
+    .footer-social_link {
+        font-weight: 500;
     }
     .footer-content_politics {
         font-size: 16px;

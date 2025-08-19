@@ -10,6 +10,44 @@
     <link rel="icon" href="img/ava-sw.png">
 </head>
 <body>
+<header class="header"> <!-- Шапка (цвет/фон страницы блога) -->
+  <div class="header-content"> <!-- Центровка и ограничение ширины -->
+    
+    <div class="blog-header"> <!-- общая шапка блога -->
+         <a href="index.html" class="logo">ShatalinWeb</a>
+        <div class="blog-header_top"> <!-- верхняя панель -->
+            <h1 class="blog-title">Блог</h1> <!-- заголовок страницы -->
+            <div class="theme">
+                <button class="js-theme-light_blog">☀️</button>
+                <button class="js-theme-dark_blog">🌙</button>
+            </div>
+        </div>
+    </div>
 
+    <div class="header-wrapper"> <!-- Обёртка: навигация (фильтры) + список постов -->
+
+      <nav class="blog-filters"> <!-- Навигация для фильтров -->
+        <!-- Примеры кнопок/ссылок -->
+        <button class="filter-btn" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="git">Git/GitHub</button>
+        <button class="filter-btn" data-filter="html">HTML/CSS</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+      </nav>
+
+    </div>
+
+    <div class="blog-list"> <!-- Список постов -->
+        <article class="blog-card" data-category="js">
+          <h2 class="blog-card_title">Название</h2>
+          <p class="blog-card_excerpt">Короткое описание статьи...</p>
+          <p class="blog-card_meta">18.08.2025 • JavaScript</p>
+        </article>
+    </div>
+
+    <a href="index.html" class="back-btn">← Назад</a> <!-- кнопка для возврата -->
+
+  </div>
+</header>
+    <script src="script/blog.js"></script>
 </body>
 </html>

@@ -14,3 +14,14 @@ ThemeDarkBlog.forEach(btn => {
         document.body.classList.remove('theme-light_blog');
     })
 });
+
+const modalBtn = document.querySelector('.modal-btn');
+const modal = document.querySelector('.modal');
+const colse = document.querySelector('.colse')
+
+modalBtn.addEventListener('click', function() {
+    modal.classList.add('modal-activ');
+})
+colse.addEventListener('click', function() {
+    modal.classList.remove('modal-activ');
+})

@@ -40,7 +40,10 @@
         <article class="blog-card" data-category="js">
           <h2 class="blog-card_title">Название</h2>
           <p class="blog-card_excerpt">Короткое описание статьи...</p>
-          <p class="blog-card_meta">18.08.2025 • JavaScript</p>
+          <div class="blog-box">
+            <p class="blog-card_meta">18.08.2025 • JavaScript</p>
+            <button class="modal-btn">Читать</button>
+          </div>
         </article>
     </div>
 
@@ -48,6 +51,11 @@
 
   </div>
 </header>
-    <script src="script/blog.js"></script>
+  <div class="modal">
+    <h1 class="modal-tilte">Это заголовок</h1>
+    <p class="modal-text">здесь будет описание статьи</p>
+    <button class="colse">закрыть</button>
+  </div>
+  <script src="script/blog.js"></script>
 </body>
 </html>

@@ -49,13 +49,15 @@ body.theme-light .footer-fon {
 body.theme-light .main-about_title,
 body.theme-light .main-portfolio_title,
 body.theme-light .main-services_title,
-body.theme-light .contacts__title {
+body.theme-light .contacts__title,
+body.theme-light .logo {
     color: #D4A200;
 }
 body.theme-light .info-title,
 body.theme-light .portfolio-title,
 body.theme-light .portfolio-tags,
-body.theme-light .accordion-header {
+body.theme-light .accordion-header,
+body.theme-light .header-menu_item a{
     color: #0FA3B1;
 }
 body.theme-light .typing-container,

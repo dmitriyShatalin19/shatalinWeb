@@ -529,7 +529,7 @@ body.menu-open {
 }
 @media (max-width: 475px) {
     .logo {
-        font-size: 28px;
+        font-size: 26px;
     }
     .typing-text {
         font-size: 28px;

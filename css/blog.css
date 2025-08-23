@@ -115,13 +115,21 @@ body.theme-light_blog .blog-card_excerpt {
 .modal-btn {
     color: #FFD700;
 }
+.blog-card_meta {
+    color: #29D8DB;
+}
+/*высплывающие окно*/
 .modal {
+    margin-top: 70px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #121212;
+    background-color: #1F1F1F;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px 15px;
     display: none;
     justify-content: center;
     align-items: center;
@@ -130,7 +138,43 @@ body.theme-light_blog .blog-card_excerpt {
 .modal-activ {
     display: block;
 }
-.blog-card_meta {
+.modal-content {
+    width: 1150px;
+    margin: auto;
+}
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal-title {
+    font-size: 26px;
+    color: #FFD700;
+}
+.modal-close {
+  background: none;
+  border: 1px solid #29D8DB;
+  color: #29D8DB;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-close:hover {
+  background: rgba(41,216,219,0.1);
+}
+.modal-body {
+    margin-top: 50px;
+}
+.modal-subtitle {
+    font-size: 20px;
     color: #29D8DB;
 }
-/*высплывающие окно*/
+.modal-text {
+    margin-top: 20px;
+    color: #E0E0E0;
+}
+.modal-date {
+    margin-top: 20px;
+    color: #29D8DB;
+}

@@ -15,6 +15,8 @@ ThemeDarkBlog.forEach(btn => {
     })
 });
 
+
+// высплывающие окно
 const modalBtn = document.querySelector('.modal-btn');
 const modal = document.querySelector('.modal');
 const colse = document.querySelector('.colse')

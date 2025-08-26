@@ -121,8 +121,7 @@ body.theme-light_blog .blog-card_excerpt {
 .modal {
     margin-top: 70px;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: #1F1F1F;
@@ -135,11 +134,14 @@ body.theme-light_blog .blog-card_excerpt {
     z-index: 1000;
 }
 .modal-activ {
-    display: block;
+    display: flex;
 }
 .modal-content {
-    width: 1150px;
-    margin: auto;
+    width: min(1150px, 96vw);
+    max-height: calc(100dvh - 40px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;    
 }
 .modal-header {
     display: flex;
@@ -164,19 +166,54 @@ body.theme-light_blog .blog-card_excerpt {
 }
 .modal-body {
     margin-top: 50px;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 0; 
 }
 .modal-subtitle {
+    margin-bottom: 20px;
     font-size: 20px;
     color: #29D8DB;
 }
 .modal-text {
-    margin-top: 20px;
+    line-height: 27px;
+    color: #E0E0E0;
+}
+.modal-box_text {
+    margin-top: 15px;
+    color: #E0E0E0;
+}
+.modal-box {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #121212;
+    border-left: 4px solid #FFD700;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.command-list {
+    list-style: none;
+}
+.command-item {
+    font-size: 18px;
     color: #E0E0E0;
 }
 .modal-date {
     margin-top: 20px;
     color: #29D8DB;
 }
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+.modal-body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
 /* адаптив */
 @media (max-width: 1199px) {
     .header-content {
@@ -221,5 +258,8 @@ body.theme-light_blog .blog-card_excerpt {
     .blog-filters {
         gap: 15px;
         flex-wrap: wrap;
+    }
+    .blog-card {
+        width: 100%;
     }
 }
